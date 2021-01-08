@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RBT</title>
+  </head>
+  <body>
+    <h1>RBT</h1>
+    <p>You have <strong class="balance">loading...</strong> RBT</p>
+    <h3>you are<p class="My_account">loading... RBT</p></h3>
+    <h1>Send RBT</h1>
+					   
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" placeholder="e.g. 95" />
+
+    <label for="receiver">To address:</label>
+    <input
+      type="text"
+      id="receiver"
+      placeholder="e.g. 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"
+    />
+
+    <button onclick="App.sendCoin()">Send RBT</button>
+
+    <p id="status"></p>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
