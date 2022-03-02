@@ -1,7 +1,6 @@
-pragma solidity ^0.4.24;
-import "zeppelin-solidity/contracts/math/SafeMath.sol";
-import "zeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
-
+pragma solidity >=0.4.21 <=0.8.12;
+ import "zeppelin-solidity/contracts/math/SafeMath.sol";
+ import "zeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 /*
     from main.sol get 2000,0000 RBT
     enable user to transfer eth(basic) to this contract, and sent user corresponding RBT token.

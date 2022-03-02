@@ -1,12 +1,12 @@
-var HelloToken = artifacts.require('HelloToken');
+var RealBlockToken = artifacts.require('RealBlockToken');
 
 const INITIAL_SUPPLY = 88888;
 let _totalSupply;
 
-contract('HelloToken', function (accounts) {
+contract('RealBlockToken', function (accounts) {
   it('should met initial supply', function () {
     var contract;
-    HelloToken.deployed().then((instance) => {
+    RealBlockToken.deployed().then((instance) => {
       contract = instance;
       return contract.totalSupply.call();
     }).then((totalSupply) => {

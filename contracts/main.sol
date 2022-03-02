@@ -1,5 +1,5 @@
-pragma solidity ^0.4.24;
-import "zeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
+pragma solidity >=0.4.21 <=0.8.12;
+ import "zeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 import "./SeedRound.sol";
 
 /*
@@ -43,7 +43,4 @@ contract RealBlockToken is StandardToken {
         //return balances[msg.sender];
         return SeedRound_in_main.totalRBT();
     }
-    // function sayHello() public returns (string) {//for truffle test
-    //   return ("Hello World");
-    // }
 }
